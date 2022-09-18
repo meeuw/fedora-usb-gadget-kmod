@@ -2,7 +2,7 @@
 #rpmbuild --rebuild --define='kernels $(uname -r)' whatever.srpm
 #%global buildforkernels akmod
 Name: usb-gadget-kmod
-Version: 5.18.15
+Version: 5.19.8
 Release: 1%{?dist}
 Summary: Akmod package for USB gadget module
 
@@ -13,7 +13,7 @@ URL: http://www.kernel.org
 #cd linux-stable
 #git times # https://git.wiki.kernel.org/index.php/ExampleScripts
 #tar cjf linux-drivers-usb-gadget-${VERSION}.tar.xz drivers/usb/gadget/
-Source0: linux-drivers-usb-gadget-5.18.15.tar.xz
+Source0: linux-drivers-usb-gadget-5.19.8.tar.xz
 
 BuildRequires:  %{_bindir}/kmodtool
 Provides: usb-gadget-kmod-common
